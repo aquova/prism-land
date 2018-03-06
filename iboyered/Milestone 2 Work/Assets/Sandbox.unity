@@ -495,7 +495,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8b09170f53a1c4945aad9e71617afdd6, type: 2}
+  - {fileID: 2100000, guid: 4885ab21c6f01401495ec1649a08b3cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -576,7 +576,7 @@ MonoBehaviour:
   speed: 10
   cam: {fileID: 1956058792}
   jumpSpeed: 50
-  jump: 5
+  jump: 1
   raycast: 1
 --- !u!1 &1593084691
 GameObject:
@@ -826,7 +826,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1956058788}
   m_LocalRotation: {x: 0.15426764, y: -0, z: -0, w: 0.9880291}
-  m_LocalPosition: {x: 0, y: 8.68, z: -20.89}
+  m_LocalPosition: {x: 0, y: 8.66, z: -20.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -845,12 +845,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1033963249}
   distance: 5
+  resetDistance: 7
   xSpeed: 120
   ySpeed: 120
   yMinLimit: -20
   yMaxLimit: 80
-  distanceMin: 0.5
-  distanceMax: 15
 --- !u!1 &2101040954
 GameObject:
   m_ObjectHideFlags: 0
