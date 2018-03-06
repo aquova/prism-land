@@ -22,9 +22,10 @@ public class PlayerController : MonoBehaviour {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 
-		Vector3 movement = new Vector3 (moveHorizontal, jump * jumpSpeed, moveVertical);
+		Vector3 movement = new Vector3 (moveHorizontal, 0, moveVertical);
 		movement = cam.TransformDirection (movement);
-		//movement.y = 0.0f;
+		// We need to detach jump movement from the camera angle
+		movement.y = jump * jumpSpeed;
 
 		// Changed to only make horizontal movements affect while grounded
 		if (ground)
