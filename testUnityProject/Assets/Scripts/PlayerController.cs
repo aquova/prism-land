@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
     public float jumpSpeed;
     public float raycast;
 
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
