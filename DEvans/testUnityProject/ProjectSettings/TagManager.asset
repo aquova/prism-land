@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Pick Up
-  - Bounce
-  - Death
-<<<<<<< HEAD
-  - SafeToJump
-  - Boom
-=======
-  - titleScreenItem
-  - levelSelectItem
-  - pausedItem
->>>>>>> c2db0de96706622eda829ad3ab1f0254006d3be0
+  tags: []
   layers:
   - Default
   - TransparentFX
