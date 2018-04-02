@@ -1401,8 +1401,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 180
-  maxX: 205
 --- !u!23 &69857513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2737,8 +2735,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 110
-  maxX: 125
 --- !u!23 &138085761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2873,8 +2869,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 122
-  maxX: 136.5
 --- !u!23 &142451676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4011,8 +4005,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 110
-  maxX: 125
 --- !u!23 &250962584
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4227,7 +4219,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4612,7 +4604,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5767,7 +5759,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5887,8 +5879,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 110
-  maxX: 125
 --- !u!23 &330806930
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7008,8 +6998,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 98
-  maxX: 109
 --- !u!23 &373444890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7896,8 +7884,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 98
-  maxX: 109
 --- !u!23 &391165270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8597,7 +8583,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8717,8 +8703,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &448880002
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8933,7 +8917,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9033,7 +9017,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9420,8 +9404,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 185
-  maxX: 199
 --- !u!23 &478610621
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9736,7 +9718,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9956,8 +9938,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 227.6
   maxZ: 227.6
-  minX: 149
-  maxX: 158
 --- !u!23 &492374241
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10292,8 +10272,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &506309754
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11884,8 +11862,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 185
-  maxX: 199
 --- !u!23 &610135773
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12020,8 +11996,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &611710854
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12356,8 +12330,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &620901796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12874,8 +12846,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &657506206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13095,8 +13065,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 180
-  maxX: 205
 --- !u!23 &667937264
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13770,7 +13738,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14290,8 +14258,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &769606087
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15106,7 +15072,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15811,8 +15777,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 98
-  maxX: 109
 --- !u!23 &840208458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15927,7 +15891,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16412,7 +16376,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16612,7 +16576,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16797,7 +16761,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17017,8 +16981,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &901293256
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17153,8 +17115,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &925637859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17269,7 +17229,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18256,8 +18216,6 @@ MonoBehaviour:
   maxSpeed: 1
   minZ: 35
   maxZ: 50
-  minX: 0
-  maxX: 0
 --- !u!23 &1019226510
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18407,8 +18365,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &1022923597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19106,8 +19062,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &1056607618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19612,8 +19566,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 122
-  maxX: 136.5
 --- !u!23 &1074427326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19748,8 +19700,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &1082676318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19884,8 +19834,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 185
-  maxX: 199
 --- !u!23 &1096547053
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20020,8 +19968,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 98
-  maxX: 109
 --- !u!23 &1104914146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20687,8 +20633,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &1163999982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20803,7 +20747,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21088,7 +21032,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21223,8 +21167,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &1173759630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21903,8 +21845,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 180
-  maxX: 205
 --- !u!23 &1200830197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22019,7 +21959,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23425,8 +23365,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 110
-  maxX: 125
 --- !u!23 &1291435343
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23846,8 +23784,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &1296549568
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25452,8 +25388,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 122
-  maxX: 136.5
 --- !u!23 &1395876246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25588,8 +25522,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 183
-  maxX: 203
 --- !u!23 &1395998729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25724,8 +25656,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 183
-  maxX: 203
 --- !u!23 &1396887093
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26145,8 +26075,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 0
-  maxX: 0
 --- !u!23 &1408591803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26681,8 +26609,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &1451451806
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27017,8 +26943,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 122
-  maxX: 136.5
 --- !u!23 &1467830279
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27253,8 +27177,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 98
-  maxX: 109
 --- !u!23 &1474009799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29054,7 +28976,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29369,7 +29291,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29489,8 +29411,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 122
-  maxX: 136.5
 --- !u!23 &1560008113
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29790,7 +29710,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30225,8 +30145,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 180
-  maxX: 205
 --- !u!23 &1577299781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30993,7 +30911,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31613,8 +31531,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 110
-  maxX: 125
 --- !u!23 &1649697184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31849,8 +31765,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 149
   maxZ: 158
-  minX: 149
-  maxX: 158
 --- !u!23 &1659301826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31985,8 +31899,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 0
   maxZ: 0
-  minX: 180
-  maxX: 205
 --- !u!23 &1661171808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32486,7 +32398,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33236,7 +33148,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33836,7 +33748,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34856,8 +34768,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 183
-  maxX: 203
 --- !u!23 &1804058778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35551,8 +35461,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 183
-  maxX: 203
 --- !u!23 &1848890924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36146,8 +36054,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &1891732749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36382,8 +36288,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 183
-  maxX: 203
 --- !u!23 &1900619897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36718,8 +36622,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 260
   maxZ: 290
-  minX: 180
-  maxX: 205
 --- !u!23 &1922637559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37320,7 +37222,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38006,7 +37908,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38106,7 +38008,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38206,7 +38108,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39288,7 +39190,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f70071af0e6304acda43b322073f6a6f, type: 2}
+  - {fileID: 2100000, guid: 8af19a5343bb34f8089024e7f15e8ee1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39593,8 +39495,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &2088293632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40229,8 +40129,6 @@ MonoBehaviour:
   maxSpeed: 10
   minZ: 110
   maxZ: 119
-  minX: 110
-  maxX: 119
 --- !u!23 &2101443701
 MeshRenderer:
   m_ObjectHideFlags: 0
