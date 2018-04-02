@@ -9,6 +9,7 @@ TagManager:
   - Death
   - titleScreenItem
   - levelSelectItem
+  - pausedItem
   layers:
   - Default
   - TransparentFX

@@ -14,15 +14,23 @@ public class PlayerController : MonoBehaviour {
     public float jumpSpeed;
     public float raycast;
 
+    bool pausedPressed;
+    bool oldPausedPressed;
+    GameObject[] pauseObjects;
+
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
         startingPositon = transform.position;
+        // I'm not sure we need this. The built-in timeScale function does basically the same thing for us
         canMove = true;
+        Time.timeScale = 1;
+        pauseObjects = GameObject.FindGameObjectsWithTag("pausedItem");
+        hidePaused();
 	}
 
-	private void FixedUpdate()
+	private void Update()
 	{
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -30,6 +38,25 @@ public class PlayerController : MonoBehaviour {
         Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
         movement = cam.TransformDirection(movement);
         // We need to detach jump movement from the camera angle
+
+
+        // Detect pressing ESC for pausing
+        pausedPressed = Input.GetKey(KeyCode.Escape);
+        if ((pausedPressed != oldPausedPressed) && pausedPressed)
+        {
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+                showPaused();
+            }
+            else if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+                hidePaused();
+            }
+        }
+        oldPausedPressed = pausedPressed;
+
         
         if (Showtime > 0f)
         {
@@ -107,5 +134,21 @@ public class PlayerController : MonoBehaviour {
     public void ResetPosition() {
         Stop ();
         transform.position = startingPositon;
+    }
+
+    public void showPaused()
+    {
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(true);
+        }
+    }
+
+    public void hidePaused()
+    {
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(false);
+        }
     }
 }
