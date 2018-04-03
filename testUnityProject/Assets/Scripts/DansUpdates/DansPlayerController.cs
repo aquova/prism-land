@@ -17,6 +17,11 @@ public class DansPlayerController : MonoBehaviour
     //public float raycast;
     private float speedInitial;
 
+    // Things needed for pausing
+    bool pausedPressed;
+    bool oldPausedPressed;
+    GameObject[] pauseObjects;
+
 
     // Use this for initialization
     void Start()
@@ -24,11 +29,16 @@ public class DansPlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         startingPositon = transform.position;
         speedInitial = speed;
+        // We don't really need canMove, I don't think it's ever called
+        // and timeScale can serve the same built-in function - Austin
         canMove = true;
         jump1 = true;
+        Time.timeScale = 1;
+        pauseObjects = GameObject.FindGameObjectsWithTag("pausedItem");
+        hidePaused();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -45,6 +55,23 @@ public class DansPlayerController : MonoBehaviour
         {
             speed = speedInitial;
         }
+
+        // Detect pressing ESC for pausing
+        pausedPressed = Input.GetKey(KeyCode.Escape);
+        if ((pausedPressed != oldPausedPressed) && pausedPressed)
+        {
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+                showPaused();
+            }
+            else if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+                hidePaused();
+            }
+        }
+        oldPausedPressed = pausedPressed;
 
         // Changed to only make horizontal movements affect while grounded
         //if (ground)
@@ -116,11 +143,13 @@ public class DansPlayerController : MonoBehaviour
         gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
+    // Not needed?
     public void EnableMovement()
     {
         canMove = true;
     }
 
+    // Not needed?
     public void DisableMovement()
     {
         canMove = false;
@@ -130,5 +159,21 @@ public class DansPlayerController : MonoBehaviour
     {
         Stop();
         transform.position = startingPositon;
+    }
+
+    public void showPaused()
+    {
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(true);
+        }
+    }
+
+    public void hidePaused()
+    {
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(false);
+        }
     }
 }

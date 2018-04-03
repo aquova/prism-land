@@ -8,10 +8,11 @@ public class Goal : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.GetComponent <PlayerController> () != null) {
-            ScoreAndTimeManager.FreezeTime ();
-            PlayerController p = other.gameObject.GetComponent <PlayerController> ();
-            p.GetComponent<Rigidbody>().AddForce(Vector3.up * 1000f);
-            p.DisableMovement();
+            //ScoreAndTimeManager.FreezeTime ();
+            //PlayerController p = other.gameObject.GetComponent <PlayerController> ();
+            //p.GetComponent<Rigidbody>().AddForce(Vector3.up * 1000f);
+            //p.DisableMovement();
+            Time.timeScale = 0;
             Instantiate (GoalScreen);
         }
     }
