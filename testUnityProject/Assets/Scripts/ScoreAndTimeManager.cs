@@ -10,6 +10,7 @@ public class ScoreAndTimeManager : MonoBehaviour {
 
     public Text scoreText;
     public Text timeText;
+    public Text millisecondsTimeText;
 
     void Awake () {
         ResetTimeAndScore ();
@@ -50,6 +51,7 @@ public class ScoreAndTimeManager : MonoBehaviour {
             string timerMinutes = minutes.ToString ("00");
 
             timeText.text = timerMinutes + ":" + timerSeconds;
+            millisecondsTimeText.text = (time - (int)time).ToString(".00");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DansPlayerController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class DansPlayerController : MonoBehaviour
     public float jumpSpeed;
     //public float raycast;
     private float speedInitial;
+    public GameObject SpeedParticles; 
+    private GameObject currentParitcles;
 
 
     // Use this for initialization
@@ -44,6 +47,9 @@ public class DansPlayerController : MonoBehaviour
         else
         {
             speed = speedInitial;
+            if (currentParitcles != null) {
+                Destroy(currentParitcles);
+            }
         }
 
         // Changed to only make horizontal movements affect while grounded
@@ -81,7 +87,16 @@ public class DansPlayerController : MonoBehaviour
         Debug.Log("We have collided " + other.gameObject.tag);
         if (other.gameObject.CompareTag("Pick Up"))
         {
-            other.gameObject.SetActive(false);
+            if (currentParitcles != null) {
+                Destroy(currentParitcles);
+            }
+
+            GameObject particles = Instantiate(SpeedParticles, transform.position, transform.rotation);
+            particles.transform.parent = transform;
+            currentParitcles = particles;
+
+            // Creates another thread that waits 10 seconds then respawns the pick up
+            StartCoroutine(TemporarilyDisable(other.gameObject, 10, null));
             speed = 40f;
             Showtime = 3f;
         }
@@ -131,4 +146,16 @@ public class DansPlayerController : MonoBehaviour
         Stop();
         transform.position = startingPositon;
     }
+
+    // Temporarily deactivates the specified game object. Do Not call it on the player game object or it will never respawn
+    IEnumerator TemporarilyDisable(GameObject obj, int time, Action callback) {
+		obj.SetActive(false);
+		yield return new WaitForSeconds(time);
+		obj.SetActive(true);
+
+        // Potential extra things we may want to do after waiting the specified time
+        if (callback != null) {
+            callback();
+        }
+	}
 }
