@@ -51,6 +51,40 @@ public class DeathBall : MonoBehaviour {
                 baller.AddForce(move);
             }
         }
+        // X direction
+
+        if (velocity.x >= 0 && position.x < maxZ)
+        {
+            if (velocity.x < maxSpeed)
+            {
+                Vector3 move = new Vector3(speed, 0.0f, 0.0f);
+                baller.AddForce(move);
+            }
+        }
+        else if (velocity.x > 0 && position.x > maxZ)
+        {
+            if (velocity.x < maxSpeed)
+            {
+                Vector3 move = new Vector3(-speed, 0.0f, 0.0f);
+                baller.AddForce(move);
+            }
+        }
+        else if (velocity.x < 0 && position.x > minZ)
+        {
+            if (velocity.x < maxSpeed)
+            {
+                Vector3 move = new Vector3(-speed, 0.0f, 0.0f);
+                baller.AddForce(move);
+            }
+        }
+        else
+        {
+            if (velocity.x < maxSpeed)
+            {
+                Vector3 move = new Vector3(speed, 0.0f, 0.0f);
+                baller.AddForce(move);
+            }
+        }
 
     }
 }

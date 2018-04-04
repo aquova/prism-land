@@ -15,6 +15,7 @@ public class DansNewDeathBall : MonoBehaviour
     void Start()
     {
         baller = GetComponent<Rigidbody>();
+        baller.velocity = new Vector3(speed, speed, speed);
     }
 
     // Update is called once per frame
@@ -24,41 +25,42 @@ public class DansNewDeathBall : MonoBehaviour
         Vector3 velocity = baller.velocity;
 
         //y movement
+
         if (velocity.z >= 0 && position.z < maxZ)
         {
-            baller.velocity = new Vector3(0.0f, 0.0f, speed);
+            baller.velocity = new Vector3(0.0f, 0.0f, -speed);
         }
         else if (velocity.z > 0 && position.z > maxZ)
         {
-            baller.velocity = new Vector3(0.0f, 0.0f, -speed);
+            baller.velocity = new Vector3(0.0f, 0.0f, speed);
         }
         else if (velocity.z < 0 && position.z > minZ)
         {
 
-            baller.velocity = new Vector3(0.0f, 0.0f, -speed);
+            baller.velocity = new Vector3(0.0f, 0.0f, speed);
         }
         else
         {
-            baller.velocity = new Vector3(0.0f, 0.0f, speed);
+            baller.velocity = new Vector3(0.0f, 0.0f, -speed);
         }
 
         // X movement
         if (velocity.x >= 0 && position.x < maxX)
         {
-            baller.velocity.Set(0.0f, speed, 0.0f);
+            baller.velocity.Set(-speed, -speed, 0.0f);
         }
         else if (velocity.x >= 0 && position.x > maxX)
         {
-            baller.velocity.Set(0.0f, -speed, 0.0f);
+            baller.velocity.Set(speed, speed, 0.0f);
         }
         else if (velocity.x < 0 && position.x > minX)
         {
 
-            baller.velocity.Set(0.0f, -speed, 0.0f);
+            baller.velocity.Set(speed, speed, 0.0f);
         }
         else
         {
-            baller.velocity.Set(0.0f, speed, 0.0f);
+            baller.velocity.Set(-speed, -speed, 0.0f);
         }
 
     }
