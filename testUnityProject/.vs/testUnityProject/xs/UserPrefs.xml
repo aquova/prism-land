@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{44D321BE-999C-DD3C-BFF2-B5A458DF949C}|">
   <MonoDevelop.Ide.ItemProperties.testUnityProject PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GoalScreenManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DansUpdates/DansPlayerController.cs">
     <Files>
       <File FileName="Assets/Scripts/pauseScreenManager.cs" Line="16" Column="61" />
       <File FileName="Assets/Scripts/GoalScreenManager.cs" Line="4" Column="35" />
