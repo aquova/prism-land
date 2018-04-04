@@ -548,6 +548,8 @@ MonoBehaviour:
   cam: {fileID: 1489768742}
   jump1: 0
   jumpSpeed: 15
+  SpeedParticles: {fileID: 1063142314165530, guid: dfc1c53fb266b492d9b5bda6ef24b18a,
+    type: 2}
 --- !u!1 &32347058
 GameObject:
   m_ObjectHideFlags: 0
