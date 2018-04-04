@@ -78,7 +78,7 @@ public class DansPlayerController : MonoBehaviour
                 }
             }
         }
-            oldPausedPressed = pausedPressed;
+        oldPausedPressed = pausedPressed;
 
             // Changed to only make horizontal movements affect while grounded
             //if (ground)
