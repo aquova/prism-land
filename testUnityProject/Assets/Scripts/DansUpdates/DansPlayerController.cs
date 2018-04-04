@@ -1,7 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class DansPlayerController : MonoBehaviour
 {
@@ -17,8 +16,6 @@ public class DansPlayerController : MonoBehaviour
     public float jumpSpeed;
     //public float raycast;
     private float speedInitial;
-    public GameObject SpeedParticles; 
-    private GameObject currentParitcles;
 
     // Things needed for pausing
     bool pausedPressed;
@@ -67,63 +64,51 @@ public class DansPlayerController : MonoBehaviour
             {
                 Time.timeScale = 0;
                 showPaused();
-                if (currentParitcles != null)
-                {
-                    Destroy(currentParitcles);
-                }
-                else if (Time.timeScale == 0)
-                {
-                    Time.timeScale = 1;
-                    hidePaused();
-                }
+            }
+            else if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+                hidePaused();
             }
         }
         oldPausedPressed = pausedPressed;
 
-            // Changed to only make horizontal movements affect while grounded
-            //if (ground)
-            //{
+        // Changed to only make horizontal movements affect while grounded
+        //if (ground)
+        //{
 
-            //}
+        //}
 
-            // Jump stuff
-            //        if (Physics.Raycast(transform.position, Vector3.down, raycast))
-            //        {
-            //            ground = true;
-            //        }
-            //        else
-            //        {
-            //           ground = false;
-            //        }
+        // Jump stuff
+        //        if (Physics.Raycast(transform.position, Vector3.down, raycast))
+        //        {
+        //            ground = true;
+        //        }
+        //        else
+        //        {
+        //           ground = false;
+        //        }
 
-            if (jump1 && Input.GetButtonDown("Jump"))
-            {
-                // TODO: Add ray debug draw to make sure raycasting is in the right direction
-                movement.y = jumpSpeed;
-                jump1 = false;
-            }
-            else
-            {
-                movement.y = 0;
-            }
+        if (jump1 && Input.GetButtonDown("Jump"))
+        {
+            // TODO: Add ray debug draw to make sure raycasting is in the right direction
+            movement.y = jumpSpeed;
+            jump1 = false;
+        }
+        else
+        {
+            movement.y = 0;
+        }
 
         rb.AddForce(movement * speed);
     }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("We have collided " + other.gameObject.tag);
         if (other.gameObject.CompareTag("Pick Up"))
         {
-            if (currentParitcles != null) {
-                Destroy(currentParitcles);
-            }
-
-            GameObject particles = Instantiate(SpeedParticles, transform.position, transform.rotation);
-            particles.transform.parent = transform;
-            currentParitcles = particles;
-
-            // Creates another thread that waits 10 seconds then respawns the pick up
-            StartCoroutine(TemporarilyDisable(other.gameObject, 10, null));
+            other.gameObject.SetActive(false);
             speed = 40f;
             Showtime = 3f;
         }
@@ -131,7 +116,7 @@ public class DansPlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Bounce"))
         {
             Debug.Log("trampoline");
-            GetComponent<Rigidbody>().AddForce(Vector3.up * 1500f);
+            GetComponent<Rigidbody>().AddForce(Vector3.up * 500f);
         }
         if (other.gameObject.CompareTag("Death"))
         {
@@ -189,18 +174,6 @@ public class DansPlayerController : MonoBehaviour
         foreach (GameObject g in pauseObjects)
         {
             g.SetActive(false);
-        }
-    }
-
-    // Temporarily deactivates the specified game object. Do Not call it on the player game object or it will never respawn
-    IEnumerator TemporarilyDisable(GameObject obj, int time, Action callback) {
-		obj.SetActive(false);
-		yield return new WaitForSeconds(time);
-		obj.SetActive(true);
-
-        // Potential extra things we may want to do after waiting the specified time
-        if (callback != null) {
-            callback();
         }
     }
 }
