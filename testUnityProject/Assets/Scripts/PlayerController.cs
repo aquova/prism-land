@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
@@ -112,8 +113,9 @@ public class PlayerController : MonoBehaviour {
         }
         if (other.gameObject.CompareTag("Death"))
         {
-            rb.position = startingPositon;
-            rb.velocity = rb.velocity * 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //rb.position = startingPositon;
+            //rb.velocity = rb.velocity * 0;
         }
 
     }
