@@ -306,6 +306,7 @@
     <Compile Include="Assets\Scripts\Bounce_Back.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\cameraMovement.cs" />
+    <Compile Include="Assets\Scripts\chooseBall.cs" />
     <Compile Include="Assets\Scripts\DansUpdates\DansNewDeathBall.cs" />
     <Compile Include="Assets\Scripts\DansUpdates\DansPlayerController.cs" />
     <Compile Include="Assets\Scripts\DeathBall.cs" />

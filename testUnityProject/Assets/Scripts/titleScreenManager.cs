@@ -8,17 +8,19 @@ public class titleScreenManager : MonoBehaviour
 {
     public Button startButton;
     public Button sceneSelectButton;
-    public Button instructionsButton;
+    public Button ballButton;
     public Button quitButton;
     public Button backButton;
 
     GameObject[] titleObjects;
     GameObject[] selectObjects;
+    GameObject[] ballObjects;
 
 	private void Start()
 	{
         titleObjects = GameObject.FindGameObjectsWithTag("titleScreenItem");
         selectObjects = GameObject.FindGameObjectsWithTag("levelSelectItem");
+        ballObjects = GameObject.FindGameObjectsWithTag("ballSelect");
         hideLevels();
 	} 
 
@@ -28,6 +30,10 @@ public class titleScreenManager : MonoBehaviour
         }
         foreach(GameObject h in titleObjects) {
             h.SetActive(true);
+        }
+        foreach (GameObject i in ballObjects)
+        {
+            i.SetActive(false);
         }
     }
 
@@ -40,13 +46,31 @@ public class titleScreenManager : MonoBehaviour
         {
             h.SetActive(false);
         }
+        foreach (GameObject i in ballObjects)
+        {
+            i.SetActive(false);
+        }
+    }
+
+    public void showBalls() {
+        foreach (GameObject g in selectObjects)
+        {
+            g.SetActive(false);
+        }
+        foreach (GameObject h in titleObjects)
+        {
+            h.SetActive(false);
+        }
+        foreach (GameObject i in ballObjects) {
+            i.SetActive(true);
+        }
     }
 
     private void OnEnable()
     {
         startButton.onClick.AddListener(startPressed);
         sceneSelectButton.onClick.AddListener(sceneSelectPressed);
-        instructionsButton.onClick.AddListener(instructionsPressed);
+        ballButton.onClick.AddListener(ballPressed);
         quitButton.onClick.AddListener(quitPressed);
         backButton.onClick.AddListener(backPressed);
     }
@@ -69,8 +93,8 @@ public class titleScreenManager : MonoBehaviour
         showLevels();
     }
 
-    public void instructionsPressed() {
-        Debug.Log("Instructions Pressed");
+    public void ballPressed() {
+        showBalls();
     }
 
     public void backPressed() {
