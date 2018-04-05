@@ -11,6 +11,7 @@ public class DansPlayerController : MonoBehaviour
     public float speed;
     public float Showtime = 0f;
     public Transform cam;
+    public Vector3 camForward;
     //private bool ground;
     //public float jump;
     public bool jump1;
@@ -47,7 +48,12 @@ public class DansPlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
-        movement = cam.TransformDirection(movement);
+        // Modified: movement is not attached to vertical camera
+        //movement = cam.TransformDirection(movement);
+
+        camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
+        movement = (moveVertical * camForward + moveHorizontal * cam.right).normalized;
+
         // We need to detach jump movement from the camera angle
 
         if (Showtime > 0f)

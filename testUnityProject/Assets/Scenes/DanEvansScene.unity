@@ -19220,6 +19220,31 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d80e10278bbf4742a533f477742a04f, type: 2}
   m_IsPrefabParent: 0
@@ -25279,11 +25304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 17887020}
-  distance: 5
-  resetDistance: 7
+  distance: 7
   xSpeed: 120
   ySpeed: 120
-  yMinLimit: -20
+  yMinLimit: 10
   yMaxLimit: 80
 --- !u!1 &1490335382
 GameObject:

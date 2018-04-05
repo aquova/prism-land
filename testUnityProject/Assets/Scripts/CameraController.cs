@@ -7,8 +7,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Transform target;
-    public float distance = 7.0f;
-    public float resetDistance = 7.0f;
+    public float distance;
     public float xSpeed = 120.0f;
     public float ySpeed = 120.0f;
 
