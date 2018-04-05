@@ -7,12 +7,16 @@ public class GoalScreenManager : MonoBehaviour {
 
     public void RestartButtonClicked() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
-        //PlayerController player = GameObject.Find ("Player").GetComponent <PlayerController>();
-        //player.ResetPosition();
-        //player.EnableMovement();
-        //ScoreAndTimeManager.ResetTimeAndScore();
-        //ScoreAndTimeManager.UnfreezeTime();
-        //Destroy (gameObject);
+    public void TitleButtonClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void NextButtonClicked()
+    {
+        // TODO
+
     }
 }

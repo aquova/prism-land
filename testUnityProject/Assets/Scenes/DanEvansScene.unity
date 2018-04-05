@@ -12868,6 +12868,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192799244111480, guid: 8067bc22fc2c44daba9e3b5b848a48d7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8067bc22fc2c44daba9e3b5b848a48d7, type: 2}
   m_IsPrefabParent: 0
@@ -19265,6 +19269,27 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198055417174844858, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114308771767265010, guid: 3d80e10278bbf4742a533f477742a04f,
+        type: 2}
+      propertyPath: GoalScreen
+      value: 
+      objectReference: {fileID: 114156348298198758, guid: c89a94b165b764c92ae30e3409e60530,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d80e10278bbf4742a533f477742a04f, type: 2}
   m_IsPrefabParent: 0
