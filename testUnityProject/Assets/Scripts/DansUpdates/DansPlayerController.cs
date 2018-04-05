@@ -130,11 +130,7 @@ public class DansPlayerController : MonoBehaviour
             Showtime = 3f;
         }
 
-        if (other.gameObject.CompareTag("Bounce"))
-        {
-            Debug.Log("trampoline");
-            GetComponent<Rigidbody>().AddForce(Vector3.up * 500f);
-        }
+
         if (other.gameObject.CompareTag("Death"))
         {
             rb.position = startingPositon;
@@ -152,6 +148,14 @@ public class DansPlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Boom"))
         {
             collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(1000.0f, collision.gameObject.GetComponent<Rigidbody>().position, 30000.0f);
+        }
+        if (collision.gameObject.CompareTag("Bounce"))
+        {
+            Debug.Log("trampoline");
+            if (gameObject.transform.position.y  >= collision.gameObject.transform.position.y + collision.gameObject.GetComponent<Renderer>().bounds.size.y/2)
+            {
+                GetComponent<Rigidbody>().AddForce(Vector3.up * 2500f);
+            }
         }
     }
     public void Stop()
