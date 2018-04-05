@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DanEvansScene.unity
     guid: dad8d34433bb3e34fa4deb506d85145d
+  - enabled: 1
+    path: Assets/Scenes/mainplaygroundscene.unity
+    guid: d6855dd91fac74bf3927a2ac037f2a3f

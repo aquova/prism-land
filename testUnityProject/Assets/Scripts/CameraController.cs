@@ -52,6 +52,7 @@ public class CameraController : MonoBehaviour
 
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distance, distance);
 
+            /*
             RaycastHit hit;
             // Attempting to make the raycast out to the camera
             RaycastHit fullHit;
@@ -67,6 +68,9 @@ public class CameraController : MonoBehaviour
                 {
                     distance = resetDistance;
                 }
+
+            */
+
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;
 

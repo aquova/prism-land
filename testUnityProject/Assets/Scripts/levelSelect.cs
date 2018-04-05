@@ -22,6 +22,7 @@ public class levelSelect : MonoBehaviour {
 
     public void lvl2Selected() {
         Debug.Log("Level 2 Button pressed");
+        SceneManager.LoadScene(2);
     }
 
     public void lvl3Selected()
