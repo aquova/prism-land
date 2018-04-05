@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class chooseBall : MonoBehaviour {
+public class chooseBall : MonoBehaviour
+{
     public Button pacman;
     public Button earth;
     public Button jupiter;
@@ -19,15 +20,19 @@ public class chooseBall : MonoBehaviour {
     public Texture soccerTexture;
 
     GameObject[] titleObjects;
+    GameObject[] selectObjects;
     GameObject[] ballObjects;
-	
-    private void Start() {
+
+    private void Start()
+    {
         titleObjects = GameObject.FindGameObjectsWithTag("titleScreenItem");
-        ballObjects = GameObject.FindGameObjectsWithTag("ballSelect");
+        selectObjects = GameObject.FindGameObjectsWithTag("levelSelectItem");
     }
 
     private void OnEnable()
     {
+        // I have no idea why this goes in here instead of Start()
+        ballObjects = GameObject.FindGameObjectsWithTag("ballSelect");
         pacman.onClick.AddListener(pacmanPressed);
         earth.onClick.AddListener(earthPressed);
         jupiter.onClick.AddListener(jupiterPressed);
@@ -36,10 +41,25 @@ public class chooseBall : MonoBehaviour {
         archery.onClick.AddListener(archeryPressed);
     }
 
+
+    private void showMainMenu()
+    {
+        foreach (GameObject h in ballObjects)
+        {
+            Debug.Log(h.name);
+            h.SetActive(false);
+        }
+        foreach (GameObject h in titleObjects)
+        {
+            Debug.Log(h.name);
+            h.SetActive(true);
+        }
+    }
+
     public void archeryPressed()
     {
-        ball.GetComponent<Renderer>().sharedMaterial.mainTexture = archeryTexture;
         showMainMenu();
+        ball.GetComponent<Renderer>().sharedMaterial.mainTexture = archeryTexture;
     }
 
     public void earthPressed()
@@ -71,15 +91,5 @@ public class chooseBall : MonoBehaviour {
         showMainMenu();
     }
 
-    public void showMainMenu()
-    {
-        foreach (GameObject h in titleObjects)
-        {
-            h.SetActive(true);
-        }
-        foreach (GameObject i in ballObjects)
-        {
-            i.SetActive(false);
-        }
-    }
+
 }
