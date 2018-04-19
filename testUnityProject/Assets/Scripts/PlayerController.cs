@@ -28,11 +28,13 @@ public class PlayerController : MonoBehaviour {
         canMove = true;
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("pausedItem");
-        hidePaused();
+        //hidePaused();
 	}
 
 	private void Update()
 	{
+		Debug.Log ("WRONGGGGG PLAYER CONTROLLER SCRIPT");
+		Debug.Log ("is this being used at all?");
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -42,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 
 
         // Detect pressing ESC for pausing
-        pausedPressed = Input.GetKey(KeyCode.Escape);
+        /*pausedPressed = Input.GetKey(KeyCode.Escape);
         if ((pausedPressed != oldPausedPressed) && pausedPressed)
         {
             if (Time.timeScale == 1)
@@ -58,14 +60,14 @@ public class PlayerController : MonoBehaviour {
         }
         oldPausedPressed = pausedPressed;
 
-        
+        */
         if (Showtime > 0f)
         {
             Showtime = Showtime - (Time.deltaTime);
         }
         else
         {
-            speed = 15f;
+            speed = 25f;
         }
 
         // Changed to only make horizontal movements affect while grounded
@@ -138,7 +140,7 @@ public class PlayerController : MonoBehaviour {
         transform.position = startingPositon;
     }
 
-    public void showPaused()
+    /*public void showPaused()
     {
         foreach (GameObject g in pauseObjects)
         {
@@ -152,5 +154,5 @@ public class PlayerController : MonoBehaviour {
         {
             g.SetActive(false);
         }
-    }
+    }*/
 }
