@@ -303,6 +303,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\autoCamScript.cs" />
     <Compile Include="Assets\Scripts\Bounce_Back.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\cameraMovement.cs" />
@@ -310,6 +311,7 @@
     <Compile Include="Assets\Scripts\DansUpdates\DansNewDeathBall.cs" />
     <Compile Include="Assets\Scripts\DansUpdates\DansPlayerController.cs" />
     <Compile Include="Assets\Scripts\DeathBall.cs" />
+    <Compile Include="Assets\Scripts\finalPlayerScript.cs" />
     <Compile Include="Assets\Scripts\Goal.cs" />
     <Compile Include="Assets\Scripts\GoalScreenManager.cs" />
     <Compile Include="Assets\Scripts\levelSelect.cs" />

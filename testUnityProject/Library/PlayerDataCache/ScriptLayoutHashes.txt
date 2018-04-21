@@ -1,7 +1,10 @@
 OSXStandalone
 SceneListBegin?
 Assets/Scenes/titleScreen.unity
-Assets/Scenes/DanEvansScene.unity
+Assets/Scenes/AustinsLevels/level1.unity
+Assets/Scenes/DanEvansScene/HiddenGoal.unity
+Assets/Scenes/TaylorsLevels/MyLevelOne.unity
+Assets/Scenes/DanEvansScene/DanEvansSceneSansAndrewsChanges.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -118,11 +121,11 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 cd08b04bb320e3256925091d2aa95ad8 Assembly-CSharp.dll:.Score_Pickup
+d39cea5fccde99ffcd62c9b738f1b460 Assembly-CSharp.dll:.chooseBall
 7c27e6a839a326b50a7480ddb6409c4f Assembly-CSharp.dll:.DansNewDeathBall
-dec47b59b9ca8cbd3ef29e680b93fe9c Assembly-CSharp.dll:.pauseScreenManager
+8ab5fb33cc41f49839230e04b90c2247 Assembly-CSharp.dll:.pauseScreenManager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-528a63f2021965f59ed18a20ddc3873b Assembly-CSharp.dll:.DeathBall
 1e4f996cbca7dffec55d19a37d5dd8fe Assembly-CSharp.dll:.PlayerController
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -144,16 +147,20 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
-a57b571aafd6b98e758c729157e729e0 Assembly-CSharp.dll:.levelSelect
+2c3412ad37474282f741e45016783c93 Assembly-CSharp.dll:.levelSelect
+528a63f2021965f59ed18a20ddc3873b Assembly-CSharp.dll:.DeathBall
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+36779f9428085eab5151873a796b97fc Assembly-CSharp.dll:.movePlatforms
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-96198bd0785ef253a20fcea6fcb5db35 Assembly-CSharp.dll:.CameraController
-9cda712e4c6b282eb7122a16dc631ad2 Assembly-CSharp.dll:.titleScreenManager
+ddd26fe518acbf9b7cf8e00f887f2419 Assembly-CSharp.dll:.CameraController
+df28435c17ac7e7c6a84586394a4385d Assembly-CSharp.dll:.titleScreenManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GoalScreenManager
-c98e9c40cee94500fea8b3730a1a79c9 Assembly-CSharp.dll:.DansPlayerController
+4fd621cf941aab8a4574f5de4ce03db5 Assembly-CSharp.dll:.DansPlayerController
 d01fba27b3d890a4c98aedfdd86bcac4 Assembly-CSharp.dll:.Bounce_Back
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Rotator
+5001cc11ff6721bd6513c591ffd8485c Assembly-CSharp.dll:.autoCamScript
+d098ec48e528681dda17efb53c05228f Assembly-CSharp.dll:.finalPlayerScript

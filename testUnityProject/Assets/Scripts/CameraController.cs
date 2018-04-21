@@ -40,6 +40,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
+		//Debug.Log ("MOUSE CAM SCRIPT");
         if (target)
         {
             x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
@@ -50,25 +51,6 @@ public class CameraController : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(y, x, 0);
 
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distance, distance);
-
-            /*
-            RaycastHit hit;
-            // Attempting to make the raycast out to the camera
-            RaycastHit fullHit;
-            // Linecast between the target (ball) and the camera
-            Physics.Linecast(target.position, transform.position, out fullHit);
-            // If the full hit is less than 7, set the position appropriately
-            if (fullHit.distance < 7.0)
-                if (Physics.Linecast(target.position, transform.position, out hit))
-                {
-                    distance = hit.distance;
-                }
-                else
-                {
-                    distance = resetDistance;
-                }
-
-            */
 
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;

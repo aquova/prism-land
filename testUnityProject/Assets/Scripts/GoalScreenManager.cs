@@ -16,7 +16,6 @@ public class GoalScreenManager : MonoBehaviour {
 
     public void NextButtonClicked()
     {
-        // TODO
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

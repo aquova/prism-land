@@ -22,9 +22,8 @@ GameObject:
   - component: {fileID: 33409802085803660}
   - component: {fileID: 135953213173952018}
   - component: {fileID: 23696852369182608}
-  - component: {fileID: 114473081734357636}
   - component: {fileID: 54610511931588514}
-  - component: {fileID: 114627239935152032}
+  - component: {fileID: 114095545605168974}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -101,24 +100,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &114473081734357636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1565367009643086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73673d291c5af419e97b475e523916c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  Showtime: 0
-  cam: {fileID: 0}
-  jump: 0
-  jumpSpeed: 15
-  raycast: 0
---- !u!114 &114627239935152032
+--- !u!114 &114095545605168974
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -126,16 +108,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565367009643086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da895e5d625f15845bd9ff28587445be, type: 3}
+  m_Script: {fileID: 11500000, guid: b463c22381df243e8947d33eceeec1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  Showtime: 0
+  speed: 25
   cam: {fileID: 0}
   jump1: 0
   jumpSpeed: 15
   SpeedParticles: {fileID: 1063142314165530, guid: dfc1c53fb266b492d9b5bda6ef24b18a,
     type: 2}
+  autoCam: 0
+  autoCamEmpty: {fileID: 0}
+  trampolineForce: 500
 --- !u!135 &135953213173952018
 SphereCollider:
   m_ObjectHideFlags: 1

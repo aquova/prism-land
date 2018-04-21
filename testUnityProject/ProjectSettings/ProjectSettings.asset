@@ -629,12 +629,14 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Collab: 1
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 5d3fb49a-529c-4c6a-9ec6-dc7aac4e30f1
+  cloudProjectId: d9cd944f-c502-4f45-b8d2-5f8e95ab900b
   projectName: testUnityProject
-  organizationId: andy-rochat
+  organizationId: prism-land
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
