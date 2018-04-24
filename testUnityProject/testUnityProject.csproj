@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile></TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
@@ -305,25 +306,34 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\autoCamScript.cs" />
     <Compile Include="Assets\Scripts\Bounce_Back.cs" />
+    <Compile Include="Assets\Scripts\Bounce_Back_From_Point.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\cameraMovement.cs" />
+    <Compile Include="Assets\Scripts\checkpointScript.cs" />
     <Compile Include="Assets\Scripts\chooseBall.cs" />
     <Compile Include="Assets\Scripts\DansUpdates\DansNewDeathBall.cs" />
     <Compile Include="Assets\Scripts\DansUpdates\DansPlayerController.cs" />
     <Compile Include="Assets\Scripts\DeathBall.cs" />
+    <Compile Include="Assets\Scripts\elevator.cs" />
     <Compile Include="Assets\Scripts\finalPlayerScript.cs" />
+    <Compile Include="Assets\Scripts\FloorSpikeScript.cs" />
+    <Compile Include="Assets\Scripts\gameTextScript.cs" />
     <Compile Include="Assets\Scripts\Goal.cs" />
     <Compile Include="Assets\Scripts\GoalScreenManager.cs" />
     <Compile Include="Assets\Scripts\levelSelect.cs" />
+    <Compile Include="Assets\Scripts\MazeTileScript.cs" />
     <Compile Include="Assets\Scripts\movePlatforms.cs" />
+    <Compile Include="Assets\Scripts\particleTrigger.cs" />
     <Compile Include="Assets\Scripts\pauseScreenManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\randomHutGoal.cs" />
     <Compile Include="Assets\Scripts\rollingMovement.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\Score_Pickup.cs" />
-    <Compile Include="Assets\Scripts\ScoreAndTimeManager.cs" />
     <Compile Include="Assets\Scripts\titleScreenManager.cs" />
+    <Compile Include="Assets\Scripts\tutorialScreen.cs" />
+    <Compile Include="Assets\Scripts\weightScript.cs" />
     <Compile Include="Assets\Scripts\windmillRotate.cs" />
+    <Compile Include="Assets\Scripts\winScreen.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

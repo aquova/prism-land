@@ -111,15 +111,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b463c22381df243e8947d33eceeec1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 20
   cam: {fileID: 0}
   jump1: 0
-  jumpSpeed: 15
+  jumpSpeed: 10
   SpeedParticles: {fileID: 1063142314165530, guid: dfc1c53fb266b492d9b5bda6ef24b18a,
     type: 2}
   autoCam: 0
   autoCamEmpty: {fileID: 0}
   trampolineForce: 500
+  Checkpoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  RespawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasCheckpoints: 1
 --- !u!135 &135953213173952018
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -13,6 +13,8 @@ public class autoCamScript : MonoBehaviour
 	Vector3 forceDirection;
 	float speedInitial;
 
+	Vector3 camForward; 
+
 	bool oneTime;
 
 	void Start() {
@@ -58,6 +60,12 @@ public class autoCamScript : MonoBehaviour
 
 
 		//add force to ball
-		rb.AddForce(forceDirection.normalized * speed * (Input.GetAxis("Vertical")));
+		//rb.AddForce(forceDirection.normalized * speed * (Input.GetAxis("Vertical")));
+
+		camForward = forceDirection.normalized * speed * (Input.GetAxis ("Vertical"));
+	}
+
+	private void FixedUpdate () {
+		rb.AddForce (camForward);
 	}
 }

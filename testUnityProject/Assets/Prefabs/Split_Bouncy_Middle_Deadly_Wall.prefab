@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65373117811130996}
   - component: {fileID: 23851612649154626}
   m_Layer: 0
-  m_Name: Bounce_Wall
+  m_Name: Death_Wall
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 65453154045601570}
   - component: {fileID: 23386166265557850}
   m_Layer: 0
-  m_Name: Bounce_Wall (1)
+  m_Name: Death_Wall (1)
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 65042244221125342}
   - component: {fileID: 23575117112732754}
   m_Layer: 0
-  m_Name: Bounce_Wall (3)
+  m_Name: Death_Wall (3)
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 65458409195639890}
   - component: {fileID: 23107184216327296}
   m_Layer: 0
-  m_Name: Bounce_Wall (2)
+  m_Name: Death_Wall (2)
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,8 +237,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1607946916730374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.25, y: 0, z: -15}
+  m_LocalScale: {x: 1.5, y: 1, z: 1.5}
   m_Children:
   - {fileID: 4527491051979030}
   - {fileID: 4234898289602536}
@@ -594,4 +594,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1645d09ea191f4ff8b717fb98e62384f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: 500
+  magnitude: 1000

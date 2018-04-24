@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
     {
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
-        y = angles.x;
+        y = 20.0f; // updated to start the camera angled appropriately
 
         rigidbody = GetComponent<Rigidbody>();
 

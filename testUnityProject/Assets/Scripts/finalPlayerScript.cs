@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class finalPlayerScript : MonoBehaviour
 {
@@ -40,32 +41,39 @@ public class finalPlayerScript : MonoBehaviour
 	//trampoline force
 	[SerializeField] float trampolineForce = 500f;
 
+    // Checkpoint
+    public GameObject[] Checkpoints;
+    public GameObject[] RespawnPoints;
+    private int lastRespawnPointIndex;
+    public Boolean hasCheckpoints;
+    private Boolean hasPastCheck;
+
+
 	// Use this for initialization
 	void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 		startingPositon = transform.position;
-		speedInitial = speed;
+        speedInitial = speed;
 		// We don't really need canMove, I don't think it's ever called
 		// and timeScale can serve the same built-in function - Austin
 		canMove = true;
 		jump1 = true;
 		Time.timeScale = 1;
 		pauseObjects = GameObject.FindGameObjectsWithTag("pausedItem");
-		//hidePaused();
+        //hidePaused();
 	}
 
 	private void Update()
 	{
+
+
 		if (autoCam == false) {
 
 			float moveHorizontal = Input.GetAxis ("Horizontal");
 			float moveVertical = Input.GetAxis ("Vertical");
 			jump = Input.GetButton ("Jump");
 
-			//movement = moveHorizontal, 0, moveVertical;
-			// Modified: movement is not attached to vertical camera
-			//movement = cam.TransformDirection(movement);
 
 			camForward = Vector3.Scale (cam.forward, new Vector3 (1, 0, 1)).normalized;
 			movement = (moveVertical * camForward + moveHorizontal * cam.right).normalized;
@@ -83,7 +91,6 @@ public class finalPlayerScript : MonoBehaviour
 		}
 		//Debug.Log ("right before jump.  Jump1 = "+jump1);
 		if (jump1 && Input.GetButtonDown ("Jump")) {
-			Debug.Log ("JUMPING.  Jump1 = "+jump1);
 
 			// TODO: Add ray debug draw to make sure raycasting is in the right direction
 
@@ -94,18 +101,18 @@ public class finalPlayerScript : MonoBehaviour
 		} else {
 			movement.y = 0;
 		}
-
+		/*
 		if (autoCam == false) {
 			rb.AddForce (movement * speed);
-		}		
+		}	*/	
 	}
 
-/*	private void FixedUpdate()
+	private void FixedUpdate()
 	{
 		if (autoCam == false) {
 			rb.AddForce (movement * speed);
 		}
-
+		/*
 		//raycast
 		if (Physics.Raycast(transform.position, -Vector3.up, groundedRay) && jump)
 		{
@@ -114,16 +121,14 @@ public class finalPlayerScript : MonoBehaviour
 		}
 
 		jump = false;
-
-	}*/
+		*/
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		//Debug.Log("We have collided " + other.gameObject.tag);
-		if (other.gameObject.CompareTag("Pick Up"))
-		{
-			if (currentParitcles != null)
-			{
+			
+		if (other.gameObject.CompareTag("Pick Up")) {
+			if (currentParitcles != null) {
 				Destroy(currentParitcles);
 			}
 
@@ -138,7 +143,7 @@ public class finalPlayerScript : MonoBehaviour
 			Showtime = 3f;
 
 			if (autoCam == true) {
-				autoCamEmpty.GetComponent<autoCamScript> ().speed = 40f;
+				autoCamEmpty.GetComponent<autoCamScript> ().speed += 20f;
 				autoCamEmpty.GetComponent<autoCamScript> ().Showtime = 3f;
 			}
 
@@ -147,9 +152,28 @@ public class finalPlayerScript : MonoBehaviour
 
 		if (other.gameObject.CompareTag("Death"))
 		{
-			rb.position = startingPositon;
-			rb.velocity = rb.velocity * 0;
+            if (hasCheckpoints && hasPastCheck) {
+                rb.position = this.RespawnPoints[this.lastRespawnPointIndex].transform.position;
+            }
+            else {
+                rb.position = startingPositon;
+            }
+			Stop ();
+			Showtime = 0;
+			if (currentParitcles != null) {
+				Destroy (currentParitcles);
+			}
 		}
+
+        if (other.gameObject.CompareTag("Checkpoint")) {
+            hasPastCheck = true;
+            Debug.Log(other.gameObject.name);
+            for (int i = 0; i < Checkpoints.Length; i++) {
+                if (other.gameObject.name == Checkpoints[i].name) {
+                    this.lastRespawnPointIndex = i;
+                }
+            }
+        }
 	}
 
 	private void OnCollisionEnter(Collision collision) {

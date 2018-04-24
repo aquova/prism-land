@@ -9,20 +9,65 @@ EditorBuildSettings:
     path: Assets/Scenes/titleScreen.unity
     guid: c9c6420737ac2497c8d2b6423593cf3f
   - enabled: 1
-    path: Assets/Scenes/AustinsLevels/level1.unity
-    guid: 2a16c5f2de0aa4499a87c4688afe15c8
+    path: Assets/Scenes/Andrews Scenes/beginnerControlsScene.unity
+    guid: cd8c53d8b14784235abf7290275a084a
+  - enabled: 1
+    path: Assets/Scenes/Andrews Scenes/beginnerControlsScene2.unity
+    guid: 32dc425f5859442849def057675aa6fd
+  - enabled: 1
+    path: Assets/Scenes/Andrews Scenes/beginnerControlsScene3.unity
+    guid: 193e8c69ce6924908b5347f54a61afbe
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/Teach To Sprint.unity
+    guid: f04ddb4f7c56e5a429b6c1c61990bba6
+  - enabled: 1
+    path: Assets/Scenes/JacksLevels/TeachToJumpScene.unity
+    guid: cdb0e6b54034143e4b7288019e862bef
+  - enabled: 1
+    path: Assets/Scenes/IansLevels/elevator.unity
+    guid: 4aaa6cd7cfcdc4326881ba3511a0fec9
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/Teaching Exploding Huts.unity
+    guid: 301993c20a7b1964a8483fe7009d6596
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/Teaching Trampolines.unity
+    guid: 946fb2ac260c2e44b9ca5a96ba7e9fc7
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/Teaching Enemies.unity
+    guid: ece5f9f9302ce7f4fa60a24e2c0edc6c
+  - enabled: 1
+    path: Assets/Scenes/AustinsLevels/level2.unity
+    guid: c1dfdc2e7dee144d4a4fdad3c89ad140
+  - enabled: 1
+    path: Assets/Scenes/AustinsLevels/level3.unity
+    guid: 76f280572287b4b2c966eaed9e4fc1e1
+  - enabled: 1
+    path: Assets/Scenes/Andrews Scenes/wreckingBallLevel.unity
+    guid: 06f58f5d903e1410f9787ccc983a3813
+  - enabled: 1
+    path: Assets/Scenes/IansLevels/snakingPlatform.unity
+    guid: 62de9324d383e47dbbeed24f4c8ea3b1
+  - enabled: 1
+    path: Assets/Scenes/JacksLevels/ThreeSplitsScene.unity
+    guid: b7d0550bc674743e494c73f0b59329fa
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/Hidden Goal.unity
+    guid: 87a9d046c5048ee46a41f23b700b74b8
+  - enabled: 1
+    path: Assets/Scenes/JacksLevels/RampJumpScene.unity
+    guid: ed1e8d45984764d0d86bc8bb62325bd0
+  - enabled: 1
+    path: Assets/Scenes/Andrews Scenes/wreckingBallLevelAdvanced.unity
+    guid: d12682cf3ae92450d9e17ba60599e438
+  - enabled: 1
+    path: Assets/Scenes/DanEvansScene/ThreePaths.unity
+    guid: 7b921f0b7bc578448b11e4780728d6f0
   - enabled: 1
     path: Assets/Scenes/TaylorsLevels/MyLevelOne.unity
     guid: dea96f6764fb749e18e638806f38d3a0
   - enabled: 1
-    path: Assets/Scenes/DanEvansScene/Milestone3.unity
-    guid: 7b921f0b7bc578448b11e4780728d6f0
+    path: Assets/Scenes/DanEvansScene/LateGameLevel.unity
+    guid: 678796cebd2be4a47a89968a50cbdc8b
   - enabled: 1
-    path: Assets/Scenes/RampJumpScene.unity
-    guid: ed1e8d45984764d0d86bc8bb62325bd0
-  - enabled: 1
-    path: Assets/Scenes/ThreeSplitsScene.unity
-    guid: b7d0550bc674743e494c73f0b59329fa
-  - enabled: 1
-    path: Assets/Scenes/DanEvansScene/HiddenGoal.unity
-    guid: 32b014a87c21f4b4cac32744c272cb4d
+    path: Assets/Scenes/AustinsLevels/YouWin.unity
+    guid: e31bd3774d8ec47ac96b86e2bf338761
